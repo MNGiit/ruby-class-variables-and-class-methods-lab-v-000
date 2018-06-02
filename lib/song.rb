@@ -37,7 +37,7 @@ class Song
   def self.artist_count
     artist_hash = {}
     @@artists.each do |artist| #go through each element in this Class Array
-      artist_hash[artist]? artist_hash[artist] +=1 : artist_hash[artist] = 1 #if key exists, add 1
+      artist_hash[artist]? artist_hash[artist] +=1 : artist_hash[artist] = 1#if key exists, add 1
       #if key doesn't exist, then assign it the value 1
     end
     artist_hash #return the hash   
