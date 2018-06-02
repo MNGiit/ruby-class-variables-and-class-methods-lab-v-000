@@ -40,5 +40,6 @@ class Song
       artist_hash[artist]? artist_hash[artist] +=1 : artist_hash[artist] = 1#if key exists, add 1
       #if key doesn't exist, then assign it the value 1
     end
-    artist_hash #return the hash   
+    artist_hash #return the hash
+  end
 end
