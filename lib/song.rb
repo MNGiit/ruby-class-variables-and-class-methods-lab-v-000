@@ -27,9 +27,10 @@ class Song
   
   def self.genre_count
     genre_hash = {}
-    @@genres.each do |genre|
-      genre_hash[genre]? genre_hash[genre] +=1 : genre_hash[genre] = 1
+    @@genres.each do |genre| #go through each element in this Class Array
+      genre_hash[genre]? genre_hash[genre] +=1 : genre_hash[genre] = 1 #if key exists, add 1
+      #if key doesn't exist, then assign it the value 1
     end
-    genre_hash
+    genre_hash #return the hash
   end
 end
